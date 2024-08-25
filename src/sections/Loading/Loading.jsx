@@ -1,7 +1,7 @@
 // src/components/Loading.js
 import React from 'react';
 import './Loading.css';
-import loadingGif from '../../assets/loading.gif'; // Import the GIF
+import loadingGif from '../../assets/Loading.gif'; // Import the GIF
 
 const Loading = () => {
   return (
