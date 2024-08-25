@@ -1,0 +1,25 @@
+/* Global styles */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --icon-background: #f0f0f0;
+    --icon-color: #000000;
+  }
+  
+  [data-theme='dark'] {
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --icon-background: #333333;
+    --icon-color: #ffffff;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .floating-icon {
+    background-color: var(--icon-background);
+    color: var(--icon-color);
+  }
+  

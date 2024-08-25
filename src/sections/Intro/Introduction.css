@@ -1,0 +1,75 @@
+/* Introduction.css */
+.intro-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../../assets/gif2.gif'); /* Use the correct path */
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent overflow */
+  animation: fadeIn 1.5s ease-in-out; /* Fade in animation for the entire section */
+}
+
+.intro-content {
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  max-width: 80%; /* Prevent text from stretching too much */
+  opacity: 0; /* Start with hidden content */
+  transform: translateY(20px); /* Start slightly below the final position */
+  animation: slideUpFadeIn 1.5s ease-out forwards 0.5s; /* Animation with delay */
+}
+
+.intro-content h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: rgba(255, 255, 255, 0.9); /* White text with 90% opacity */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.intro-content h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.85); /* White text with 85% opacity */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Fade-in for the entire section */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide-up and fade-in for the content */
+@keyframes slideUpFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .intro-content h1 {
+    font-size: 2em;
+  }
+
+  .intro-content h3 {
+    font-size: 1.2em;
+  }
+}

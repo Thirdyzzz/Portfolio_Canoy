@@ -1,0 +1,81 @@
+/* Default Dark Mode */
+.navbar {
+  background: linear-gradient(90deg, #333, #555);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Align items with space between */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.5s ease, box-shadow 0.5s ease; /* Smooth background and shadow transition */
+}
+
+.navList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navItem {
+  margin: 0 15px;
+}
+
+.navItem a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s, border-bottom 0.3s, transform 0.3s ease; /* Smooth color, border-bottom, and transform transitions */
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+}
+
+.navItem a:hover {
+  color: #00d1b2;
+  border-bottom: 2px solid #00d1b2;
+  transform: scale(1.1); /* Slightly enlarge the text on hover */
+}
+
+/* Light Mode Styles */
+.light-mode .navbar {
+  background: linear-gradient(90deg, #ffffff, #dddddd);
+}
+
+.light-mode .navItem a {
+  color: #333333;
+}
+
+.light-mode .navItem a:hover {
+  color: #00d1b2;
+  border-bottom: 2px solid #00d1b2;
+}
+
+/* Theme Toggle Styles */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align the toggle button to the right */
+}
+
+#theme-switch {
+  margin-left: 10px;
+}
+
+/* Slide Down Animation for Navbar */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply Slide Down Animation */
+.navbar {
+  animation: slideDown 0.5s ease-out; /* Apply slide-down animation to navbar */
+}

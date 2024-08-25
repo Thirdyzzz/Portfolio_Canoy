@@ -1,0 +1,22 @@
+.project-slider {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 16px;
+    margin: 0 auto;
+  }
+  
+  .project-slider-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  
+  .project-slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .project-slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  

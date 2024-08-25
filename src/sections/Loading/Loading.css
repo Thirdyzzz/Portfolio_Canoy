@@ -1,0 +1,38 @@
+/* src/components/Loading.css */
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000; /* Set background color to black */
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+  }
+  
+  .loading-gif {
+    width: 200px;  /* Increase the size of the GIF */
+    height: 200px;
+    animation: scaleIn 2s ease-in-out; /* Apply smooth scaling animation */
+  }
+  
+  /* Fade-in animation for the loading screen */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Smooth scaling animation for the GIF */
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0.8;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

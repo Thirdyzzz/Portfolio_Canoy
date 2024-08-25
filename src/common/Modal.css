@@ -1,0 +1,151 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: row;
+    background: var(--card-background-color);
+    color: var(--text-color); /* Use the text color variable */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-image-container {
+    width: 50%;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .modal-text-content {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text-color); /* Use the text color variable */
+  }
+  
+  .modal-text-content h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 24px;
+    color: var(--text-color); /* Ensure title uses the correct text color */
+  }
+  
+  .modal-text-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color); /* Ensure description uses the correct text color */
+  }
+  
+  .modal-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .modal-link-button,
+  .modal-close-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .modal-link-button {
+    background-color: #007bff;
+  }
+  
+  .modal-link-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .modal-close-button {
+    background-color: #6c757d;
+  }
+  
+  .modal-close-button:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .modal-content {
+      flex-direction: column;
+    }
+  
+    .modal-image-container,
+    .modal-text-content {
+      width: 100%;
+    }
+  
+    .modal-image {
+      height: auto;
+    }
+  }
+
+  .modal-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Ensure the buttons are vertically centered */
+  }
+  
+  
+  /* Button Styles */
+  .modal-link-button,
+  .modal-close-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    border: none; /* Remove default border */
+    display: inline-block;
+  }
+  
+  .modal-link-button {
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    text-decoration: none;
+  }
+  
+  .modal-link-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .modal-close-button {
+    background-color: #6c757d; /* Secondary button color */
+    color: white;
+  }
+  
+  .modal-close-button:hover {
+    background-color: #5a6268;
+  }
+  
+  
+  

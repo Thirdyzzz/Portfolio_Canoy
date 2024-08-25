@@ -1,0 +1,155 @@
+/* Ensure Navbar is sticky */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #333; /* Adjust as needed */
+  height: 60px; /* Set a fixed height for the navbar */
+}
+
+/* Intro Section */
+.intro-section {
+  margin-top: 60px; /* Same as the navbar height to prevent overlap */
+  padding: 20px;
+  width: 100%;
+  text-align: center; /* Center the text/content */
+}
+
+/* Main container styling to prevent layout shifts */
+.main-container {
+  max-width: 1200px; /* or another value that suits your layout */
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* General layout styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  width: 100%; /* Ensure body takes full width */
+  height: 100%; /* Ensure body takes full height */
+}
+
+/* Example of responsive grid for projects */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure grid takes full width */
+}
+
+/* Ensure images fit the screen */
+.projects-container img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Adjust image content to cover the area */
+}
+
+/* Flexbox for Skills */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%; /* Ensure container takes full width */
+}
+
+/* Media queries to handle different screen sizes */
+@media (max-width: 768px) {
+  .main-container {
+    padding: 0 10px;
+    align-items: center;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for smaller screens */
+  }
+
+  .intro-section {
+    margin-top: 60px; /* Ensure the margin adjusts for smaller screens */
+  }
+}
+
+/* Standardize font across the navbar */
+.navbar ul li a {
+  text-decoration: none;
+  color: white; /* Ensure the text color is consistent */
+  padding: 10px 20px;
+  display: block;
+  font-family: 'Arial', sans-serif; /* Replace 'Arial' with your preferred font */
+  font-size: 1.2em; /* Ensure the font size is consistent */
+  font-weight: normal; /* Ensure the font weight is consistent */
+}
+
+/* Ensure consistency for section headings */
+
+
+/* General styling for all section headings */
+h2 {
+  font-family: 'Arial', sans-serif; /* Ensure consistent font */
+  font-size: 2em; /* Standardize font size for headings */
+  font-weight: bold; /* Ensure all headings have the same weight */
+  color: white; /* Standardize text color */
+  text-align: left; /* Align text to the left */
+  margin-bottom: 20px; /* Add consistent bottom margin for spacing */
+}
+
+/* Navbar styling for consistency */
+.navbar ul li a {
+  font-family: 'Arial', sans-serif; /* Consistent font across the navbar */
+  font-size: 1.2em; /* Consistent font size across the navbar */
+  font-weight: bold; /* Ensure navbar items are bold */
+  color: white; /* Consistent color */
+  padding: 10px 20px;
+  display: block;
+}
+
+/* Section container to ensure even spacing */
+.section-container {
+  margin-bottom: 40px; /* Adds space between different sections */
+}
+
+/* Additional styling for Certifications */
+.certifications {
+  font-size: 1em; /* Ensure the font size for certification text is consistent */
+  color: white; /* Consistent text color */
+  margin-top: 10px; /* Space above the certification text */
+}
+
+/* Adjust margins and paddings for sections */
+.projects, .skills, .certifications {
+  padding-left: 20px; /* Adds padding to align content from the left */
+  padding-right: 20px; /* Adds padding for symmetry */
+  margin-bottom: 40px; /* Adds space between sections */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  h2 {
+      font-size: 1.5em; /* Adjusts heading size for smaller screens */
+      text-align: center; /* Centers headings on smaller screens */
+  }
+
+  .navbar ul li a {
+      font-size: 1em; /* Adjusts navbar item size for smaller screens */
+      text-align: center; /* Centers navbar items */
+  }
+
+  .projects, .skills, .certifications {
+      padding-left: 10px; /* Adjust padding for smaller screens */
+      padding-right: 10px; /* Adjust padding for smaller screens */
+      margin-bottom: 30px; /* Adjust space between sections for smaller screens */
+  }
+}

@@ -1,0 +1,62 @@
+/* WhatIDo.module.css */
+.container {
+    padding: 40px;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .serviceItem {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .serviceItem:hover {
+    transform: translateY(-10px);
+  }
+  
+  .serviceItem h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .serviceItem p {
+    font-size: 1em;
+    color: #555555;
+  }
+  
+  .icon {
+    margin-left: 10px;
+    font-size: 1.2em;
+    color: #ff5722; /* Adjust color based on the service */
+  }
+  
+  @media (max-width: 768px) {
+    .services {
+      flex-direction: column;
+    }
+  
+    .serviceItem {
+      margin: 20px 0;
+    }
+  }
+  
