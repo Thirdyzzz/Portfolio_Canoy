@@ -8,7 +8,7 @@ import githubIconlight from '../../assets/github-light.svg';
 import githubIconddark from '../../assets/github-dark.svg';
 import linkedIconlight from '../../assets/linkedin-light.svg';
 import linkedIcondark from '../../assets/linkedin-dark.svg';
-import CV from '../../assets/cv.pdf';
+import CV from '../../assets/CV.pdf';
 import { useTheme } from '../../common/ThemeContext';
 import moon from '../../assets/moon.svg';
 
